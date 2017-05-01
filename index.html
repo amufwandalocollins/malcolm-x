@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Malcolm-x tribute</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400" rel="stylesheet"> 
+	<link href="./css/mystyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+	
+	<header>
+	    <h1>Malcolm X</h1>
+	    <h2>a Biography</h2>
+	</header>
+
+	<section class="img-container">
+	    
+	    <div id="slideshow">
+		<div>
+		    <img class="responsive-img" alt="" src="http://media2.s-nbcnews.com/i/MSNBC/Components/Video/150220/a_flashback_malcolm_150219.jpg"/>
+		</div>
+
+		<div>
+		    <img class="responsive-img" alt="" src="http://malcolmx.com/wp-content/uploads/2015/02/bio-sidebar.jpg"/>
+		</div>
+	    </div>
+	    
+	</section>
+	
+	<section class="content clearfix">
+	    <p>
+		Malcolm X was born Malcolm Little on May 19, 1925 in Omaha, Nebraska. His mother, Louise Norton Little, was a homemaker occupied with the family eight children. His father, Earl Little, was an outspoken Baptist minister and avid supporter of Black Nationalist leader Marcus Garvey. Early civil rights activism prompted death threats from the white supremacist organization Black Legion, forcing the family to relocate twice before Malcolm's fourth birthday.Earls civil rights activism prompted death threats from the white supremacist organization Black Legion, forcing the family to relocate twice before Malcolms fourth birthday.
+	    </p>
+
+	    <p>
+		Recalling his days in school, he used the time to further his education. It was during this period of self-enlightenment that Malcolms brother Reginald would visit and discuss his recent conversion to the Muslim religion. Reginald belonged to the religious organization the Nation of Islam (NOI).
+	    </p>
+	    
+      	    <p>
+		Intrigued, Malcolm began to study the teachings of NOI leader Elijah Muhammad. Muhammad taught that white society actively worked to keep African-Americans from empowering themselves and achieving political, economic, and social success. Among other goals, the NOI fought for a state of their own, separate from one inhabited by white people. By the time he was paroled in 1952, Malcolm was a devoted follower with the new surname "X" (He considered "Little" a slave name and chose the "X" to signify his lost tribal name.).
+	    </p>
+	    
+	    <p>
+		Intelligent and articulate, Malcolm was appointed as a minister and national spokesman for the Nation of Islam. Elijah Muhammad also charged him with establishing new mosques in cities such as Detroit, Michigan, and Harlem. Malcolm utilized newspaper columns, as well as radio and television, to communicate the NOI's message across the United States. His charisma, drive, and conviction attracted an astounding number of new members. Malcolm was largely credited with increasing membership in the NOI from 500 in 1952 to 30,000 in 1963.
+	    </p>
+	    
+      	    <p>
+		Intelligent and articulate, Malcolm was appointed as a minister and national spokesman for the Nation of Islam. Elijah Muhammad also charged him with establishing new mosques in cities such as Detroit, Michigan, and Harlem. Malcolm utilized newspaper columns, as well as radio and television, to communicate the NOI's message across the United States. His charisma, drive, and conviction attracted an astounding number of new members. Malcolm was largely credited with increasing membership in the NOI from 500 in 1952 to 30,000 in 1963.
+	    </p>
+	    
+	    <p>
+		The crowds and controversy surrounding Malcolm made him a media magnet. He was featured in a weeklong television special with Mike Wallace in 1959, called The Hate That Hate Produced. The program explored the fundamentals of the NOI, and tracked Malcolm's emergence as one of its most important leaders. After the special, Malcolm was faced with the uncomfortable reality that his fame had eclipsed that of his mentor Elijah Muhammad. In addition to the media, Malcolm's vivid personality had captured the government's attention. As membership in the NOI continued to grow, FBI agents infiltrated the organization (one even acted as Malcolm's bodyguard) and secretly placed bugs, wiretaps, cameras, and other surveillance equipment to monitor the group's activities.
+	    </p>
+
+	</section>
+	
+	<footer>
+
+	    <center>&copy 2017 Written with <strike>hard work</strike> a keyboard.</center>	    
+	</footer>
+
+	<script
+	    src="https://code.jquery.com/jquery-3.2.1.min.js"
+	    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	    crossorigin="anonymous"></script>
+	
+	<script>
+	 $("#slideshow > div:gt(0)").hide();
+
+	 setInterval(function() { 
+	     $('#slideshow > div:first')
+		 .fadeOut(1000)
+		 .next()
+		 .fadeIn(1000)
+		 .end()
+		 .appendTo('#slideshow');
+	 },  3000);
+	</script>
+    </body>
+</html>
